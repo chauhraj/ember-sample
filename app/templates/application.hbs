@@ -1,4 +1,13 @@
-<div class="container-fluid">
-  <h2 id="title">Welcome to Ember</h2>
-  {{outlet}}  
-</div>
+<nav class="navbar navbar-dark bg-inverse">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <form class="form-inline pull-md-right">
+    {{#power-select
+      selected=selectedClient
+      options=clients
+      onchange=(action "onClientSelected") as |client|
+    }}
+      {{client.name}}
+    {{/power-select}}
+  </form>
+</nav>
+{{outlet}}

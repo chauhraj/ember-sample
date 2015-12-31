@@ -1,5 +1,5 @@
 <nav class="navbar navbar-dark bg-inverse">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">Client: {{selectedClient.name}}</a>
   <form class="form-inline pull-md-right">
     {{#power-select
       selected=selectedClient
@@ -10,4 +10,6 @@
     {{/power-select}}
   </form>
 </nav>
-{{outlet}}
+<div class="container-fluid">
+  {{client-info client=selectedClient}}
+</div>

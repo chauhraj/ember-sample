@@ -1,5 +1,11 @@
+$dark-background: #3b3837;
+$ember-power-select-text-color: #02a67e; 
 $ember-power-select-border-color: #64A5ED;
-$ember-power-select-background-color: #3b3837;
-@import 'ember-power-select/themes/bootstrap';
+$ember-power-select-background-color: $dark-background;
 @import 'ember-power-select';
 @import "bootstrap";
+
+.client-info-background {
+  background-color: $dark-background;
+  color: #ada832;
+}
